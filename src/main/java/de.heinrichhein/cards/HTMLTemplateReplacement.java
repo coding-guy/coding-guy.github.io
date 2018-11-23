@@ -79,7 +79,7 @@ public class HTMLTemplateReplacement {
             String content = YOUTUBE_MASTER.replace( "{{title}}", youtubeCard.getTitle() )
                     .replace( "{{videoid}}", youtubeCard.getVideoId() )
                     .replace( "{{start}}", "" + youtubeCard.getStart() )
-                    .replace( "{{start}}", "" + youtubeCard.getEnd() );
+                    .replace( "{{end}}", "" + youtubeCard.getEnd() );
 
             Files.write( youtubeCardFile.toPath(), content.getBytes() );
         }
