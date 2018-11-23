@@ -20,7 +20,6 @@ public class CardStore {
         this.cards.add( YoutubeCard.of( "Warmes kaltes Wasser", "JsbK5d6RCIg", 88, 166 ) );
         this.cards.add( YoutubeCard.of( "Trügerische Linse", "wXwSpcfYBD4", 191, 219 ) );
         this.cards.add( YoutubeCard.of( "Bunter Regen", "wXwSpcfYBD4", 289, 353 ) );
-        this.cards.add( YoutubeCard.of( "Der Weg der Luft", "wXwSpcfYBD4", 289, 353 ) );
         this.cards.add( FotoCard.of( "Der Weg der Luft",
                 "https://photos.google.com/share/AF1QipMW37-71MiKy6pxvNDMxTTE34pZAypQxArXz6StKreBZjALFzSZ8iKK0tf29XnlLg/photo/AF1QipOeR-3w_GfqreYcM9QYbETSUNQsGZLu4lAVgzyn?key=WlhkOF9Rd0JoTkRFSmNHSzJIcS03TTNMWkFtYWVn" ) );
         this.cards.add( FotoCard.of( "Saugnapf",

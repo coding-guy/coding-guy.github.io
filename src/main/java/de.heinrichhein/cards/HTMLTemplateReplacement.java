@@ -77,7 +77,7 @@ public class HTMLTemplateReplacement {
             String toc = "";
             for( String filename : filenames ) {
                 String url = "./generated/" + filename;
-                toc += String.format( "<li><a href=\"%s\">%s</a></li>", url, url );
+                toc += String.format( "<li><a href=\"%s\">%s</a></li>%n", url, filename );
             }
 
             File tocFile = new File( "./index.html" );
