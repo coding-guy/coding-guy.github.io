@@ -18,6 +18,8 @@ public class HTMLTemplateReplacement {
 
     static String FOTO_MASTER;
 
+    static File GENERATION_DIR;
+
 
     public static void main( String... args ) throws IOException {
         YOUTUBE_MASTER_FILE = new File( "./youtube_master.html" );
@@ -27,7 +29,9 @@ public class HTMLTemplateReplacement {
         FOTO_MASTER_FILE = new File( "./foto_master.html" );
         FOTO_MASTER = new String( Files.readAllBytes( FOTO_MASTER_FILE.toPath() ) );
 
-        Files.createDirectory( new File( YOUTUBE_MASTER_FILE.getParentFile(), "generated" ).toPath() );
+        GENERATION_DIR = new File( YOUTUBE_MASTER_FILE.getParentFile(), "generated" );
+        if( !GENERATION_DIR.exists() )
+            Files.createDirectory( GENERATION_DIR.toPath() );
 
         new HTMLTemplateReplacement().run();
     }

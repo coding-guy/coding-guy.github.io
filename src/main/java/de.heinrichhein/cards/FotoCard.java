@@ -10,14 +10,14 @@ public class FotoCard extends Card {
     private String title;
 
 
-    private FotoCard( String url, String title ) {
+    private FotoCard( String title, String url ) {
         this.url = url;
         this.title = title;
     }
 
 
-    public static FotoCard of( String url, String title ) {
-        return new FotoCard( url, title );
+    public static FotoCard of( String title, String url ) {
+        return new FotoCard( title, url );
     }
 
 
